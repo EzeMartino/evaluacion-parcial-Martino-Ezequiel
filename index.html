@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Examen</title>
+    <title>LC2 - Examen Parcial - Ezequiel Martino</title>
+    <link rel="stylesheet" href="css/index.css">
   </head>
 
   <body>
     <header>
       <!-- navbar -->
-      <img src="img/logo.png" />
       <nav>
         <ul>
-          <li><a href="#id-de-la-seccion">La cafetería</a></li>
+          <li><a href="#section-main-image">La cafetería</a></li>
+          <li><a href="#article-coffee">El café</a></li>
+          <li><a href="#article-products">Nuestros productos</a></li>
           <li><a href="#footer-contact">Contacto</a></li>
         </ul>
       </nav>
@@ -21,7 +23,8 @@
     <main>
       <section id="section-main-image">
         <!-- full width imagen -->
-        <h1>un café especial</h1>
+        <h1>un café diferente</h1>
+        <h2 id="subtitle">Disfruta nuestra calidad excepcional</h2>
       </section>
       <section id="section-coffee">
         <div class="container">
@@ -45,13 +48,6 @@
           </article>
           <div class="product-grid">
             <div class="product">
-              <h3>Tortas</h3>
-              <img
-                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1089&q=80"
-                alt=""
-              />
-            </div>
-            <div class="product">
               <h3>Croissants</h3>
               <img
                 src="https://images.unsplash.com/photo-1620146344904-097a0002d797?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
@@ -59,16 +55,16 @@
               />
             </div>
             <div class="product">
-              <h3>Sandwiches</h3>
+              <h3>Tortas</h3>
               <img
-                src="https://images.unsplash.com/photo-1485451456034-3f9391c6f769?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1089&q=80"
                 alt=""
               />
             </div>
             <div class="product">
-              <h3>Bebidas frias</h3>
+              <h3>Sandwiches</h3>
               <img
-                src="https://images.unsplash.com/photo-1520565170521-376e52ee1d52?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
+                src="https://images.unsplash.com/photo-1485451456034-3f9391c6f769?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
                 alt=""
               />
             </div>
@@ -83,6 +79,8 @@
           <div class="contact-info">
             <ul>
               <li>Av. Siempre Viva 123</li>
+              <li>Rosario, Santa Fe</li>
+              <li>341 - 4123456</li>
             </ul>
           </div>
           <div class="contact-form">
@@ -93,11 +91,14 @@
               </div>
               <div class="form-control">
                 <label for="phone">Teléfono</label>
-                <input type="text" name="phone" id="phone" />
+                <input type="number" name="phone" id="phone" />
               </div>
               <div class="form-control">
-                <label for="email">BLABLABLA</label>
-                <input type="text" name="email" id="email" />
+                <label for="email">Email</label> <!-- Cambie esto antes de que lo dijeran los compañeros! (jajajaja)-->
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-control">
+                <button type="button">Enviar</button> <!-- Elemento button para que se le apliquen las propiedades del index.css -->
               </div>
             </form>
           </div>
